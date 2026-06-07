@@ -213,6 +213,10 @@ dependencies {
     implementation libs.firebase.analytics
     implementation libs.firebase.crashlytics
 
+    // xinlog: 自有崩溃/ANR 日志上报到鑫鑫商店后端 (com.github.daimhim:xinlog)。
+    // 通过 ContentProvider 自动初始化，无需在代码里手动 init；jitpack 仓库已在 settings.gradle 配置。
+    implementation 'com.github.daimhim:xinlog:1.2'
+
     // Kotlin
     implementation libs.kotlin.stdlib
     implementation libs.kotlinx.coroutines.android
