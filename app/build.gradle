@@ -160,7 +160,10 @@ android {
             // is to please change the applicationId before you publish.
             //
             // TL;DR: Leave the following line alone!
-            applicationIdSuffix ".qiin"
+            // Daimhim distribution: use our own applicationId so this build upgrades the
+            // existing "Moonlight" (com.limelight.unofficial) entry in the xinxin store,
+            // signed with the same ConnectBot key. (Upstream vplus uses ".qiin".)
+            applicationIdSuffix ".unofficial"
             resValue "string", "app_label", "Moonlight V+"
             resValue "string", "app_label_root", "Moonlight (Root)"
 
